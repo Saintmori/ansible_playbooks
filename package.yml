@@ -1,0 +1,11 @@
+---
+- name: install packages
+  hosts: all
+  tasks: 
+    - name: install pakages
+      yum: 
+        name:
+        - vim
+        - wget
+        - curl
+        

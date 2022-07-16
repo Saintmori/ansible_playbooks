@@ -1,6 +1,6 @@
 ---
-- name: adding line to a file
-  hosts: host1
+- name: adding line to a file version2 
+  hosts: localhost
   become: yes
   tasks:
     - name: add line

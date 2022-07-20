@@ -1,0 +1,16 @@
+---
+- name: getting memory of the servers
+  hosts: all
+  tasks:
+    - name: get memory
+      command: df -h
+      register: free_output
+    - name: print output
+      debug: 
+        var: free_output
+    - name:   
+      command: 
+        free
+      register: result
+    - debug:
+        var: result
